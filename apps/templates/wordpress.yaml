@@ -11,6 +11,6 @@ spec:
     server: {{ .Values.spec.destination.server }}
   project: default
   source:
-    path: wordpress
+    chart: wordpress
     repoURL: https://uninettsigma2.github.io/helm-charts/repos/testing/
     targetRevision: 1.2.1
