@@ -12,5 +12,5 @@ spec:
   project: default
   source:
     path: wordpress
-    repoURL: https://uninettsigma2.github.io/helm-charts/repos/testing
+    repoURL: https://uninettsigma2.github.io/helm-charts/repos/testing/
     targetRevision: 1.2.1
