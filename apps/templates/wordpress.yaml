@@ -1,0 +1,16 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: wordpress
+  namespace: argocd
+  finalizers:
+  - resources-finalizer.argocd.argoproj.io
+spec:
+  destination:
+    namespace: wordpress
+    server: {{ .Values.spec.destination.server }}
+  project: default
+  source:
+    path: wordpress
+    repoURL: https://uninettsigma2.github.io/helm-charts/repos/testing
+    targetRevision: 1.2.1
